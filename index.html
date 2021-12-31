@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Scrooge</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="ws7">
+    <div class="container">
+      <h1>Historical data for bitcoin</h1>
+      <br />
+      <p>
+        On this website you can find some specific historical data for bitcoin
+        in a time traveller fashion.
+      </p>
+      <p>
+        Data can be found from 04/28/2013 until the present day. Date format
+        month/day/year.
+      </p>
+      <p>Input the starting and ending dates as advised above to find out...</p>
+
+      <!-- minimum date beacuse no data to be found on coingecko before, max today, from js file -->
+      <input type="date" id="input1" min="2013-04-28" max="2025-12-31" />
+
+      <input type="date" id="input2" min="2013-04-28" max="2025-12-31" />
+
+      <button id="button" type="submit">Find out!</button>
+      <br />
+      <p id="para">
+        ...how many days is the longest bearish downward trend for bitcoin
+        within the given date range?
+      </p>
+
+      <div id="prices"></div>
+      <p id="para2">
+        ...the date with the highest trading volume and the volume on that day
+        in euros, within the given date range.
+      </p>
+
+      <div id="highest"></div>
+
+      <p id="para3">
+        ...a pair of days: The best day to buy and the best day to sell the
+        bought bitcoin in the given date range for maximum profit.
+      </p>
+
+      <div id="buyAndSell"></div>
+      <button onClick="window.location.reload();">Reset</button>
+      <p id="provider">The data is provided by CoinGecko.</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
