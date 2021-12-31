@@ -15,7 +15,9 @@ The endpoint used: /coins/{id}/market_chart/range
   
 For now the data is not stored, but that could be
 an option, to give the user the option to compare the results of multiple
-searches from different date ranges.
+searches from different date ranges.  
+  
+  Found on Netlify: https://awesome-edison-1833f9.netlify.app/
 
 
 
